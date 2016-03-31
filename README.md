@@ -1,9 +1,33 @@
-# format-comment package
+# atom-format-javascript-comment
 
-Format your JavaScript comments.
+Reformats your multiline comments into beautiful, maximum 80 character long lines, with no gaps or irregularities.
 
-![A screenshot of your package](https://f.cloud.github.com/assets/69169/2290250/c35d867a-a017-11e3-86be-cd7c5bf3ff9b.gif)
+## What?
+Turns this:
+```
+// Lorem ipsum dolor sit amet, consectetur
+// adipisicing elit, sed do eiusmod tempor incididunt ut labore
+// et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in.
+```
+
+Into this:
+```
+// Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+// tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+// quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+// consequat. Duis aute irure dolor in.
+```
+
+## Why?
+It's easy to format your comments correctly while writing them. But if you edit them later, it's annoying to reformat them.
+
+## How?
+1. (Partially) select the lines the comment encompasses.
+2. Open command pallette (Cmd+shift+p) and (partially) type "format comment".
+3. Press enter.
 
 ## TODO
  - Asterisk notation (multiline comments)
+ - Distribute words consistently across lines
  - Configurable line length
+ - Better way to find the selection automatically if no selection is provided

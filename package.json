@@ -1,13 +1,15 @@
 {
-  "name": "format-comment",
+  "name": "format-javascript-comment",
+  "description": "Reformats your multiline comments into beautiful, maximum 80 character long lines, with no gaps or irregularities.",
   "main": "./lib/format-comment",
-  "version": "0.0.1",
+  "version": "0.0.0",
+  "author": "Jan Amann <jan@amann.me>",
   "description": "Format your JavaScript comments",
   "keywords": [],
   "activationCommands": {
     "atom-workspace": "format-comment:format"
   },
-  "repository": "https://github.com/amannn/atom-format-comments",
+  "repository": "https://github.com/amannn/atom-format-javascript-comment",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
