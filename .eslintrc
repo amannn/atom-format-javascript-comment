@@ -1,0 +1,27 @@
+{
+  "extends": "eslint-config-airbnb",
+  "ecmaFeatures": {
+    "modules": true
+  },
+  "parser": "babel-eslint",
+  "rules": {
+    "prefer-const": 0,
+    "comma-dangle": 0,
+    "radix": 0,
+    "no-irregular-whitespace": 0,
+    "no-else-return": 0,
+    "new-cap": 0,
+    "no-param-reassign": 0,
+    "default-case": 0,
+    "no-nested-ternary": 0,
+    "one-var": 0,
+    "prefer-template": 0,
+    "max-len": 0
+  },
+  "globals": {
+    "atom": 1,
+    "describe": 1,
+    "it": 1,
+    "expect": 1
+  }
+}

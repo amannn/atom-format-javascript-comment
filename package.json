@@ -1,0 +1,22 @@
+{
+  "name": "format-comment",
+  "main": "./lib/format-comment",
+  "version": "0.0.1",
+  "description": "Format your JavaScript comments",
+  "keywords": [],
+  "activationCommands": {
+    "atom-workspace": "format-comment:format"
+  },
+  "repository": "https://github.com/amannn/atom-format-comments",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "babel-eslint": "^6.0.0",
+    "eslint": "^2.5.3",
+    "eslint-config-airbnb": "^6.2.0",
+    "eslint-plugin-react": "^4.2.3"
+  }
+}

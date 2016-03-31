@@ -1,0 +1,22 @@
+# See https://atom.io/docs/latest/hacking-atom-package-word-count#menus for more details
+'context-menu':
+  'atom-text-editor': [
+    {
+      'label': 'Format comment'
+      'command': 'format-comment:format'
+    }
+  ]
+'menu': [
+  {
+    'label': 'Packages'
+    'submenu': [
+      'label': 'format-comment'
+      'submenu': [
+        {
+          'label': 'Format'
+          'command': 'format-comment:format'
+        }
+      ]
+    ]
+  }
+]
