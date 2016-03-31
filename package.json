@@ -1,6 +1,5 @@
 {
   "name": "format-javascript-comment",
-  "description": "Reformats your multiline comments into beautiful, maximum 80 character long lines, with no gaps or irregularities.",
   "main": "./lib/format-comment",
   "version": "0.0.0",
   "author": "Jan Amann <jan@amann.me>",

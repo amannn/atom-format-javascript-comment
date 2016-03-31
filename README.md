@@ -1,4 +1,4 @@
-# atom-format-javascript-comment
+# format-javascript-comment for Atom
 
 Reformats your multiline comments into beautiful, maximum 80 character long lines, with no gaps or irregularities.
 
