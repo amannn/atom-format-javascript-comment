@@ -93,5 +93,30 @@ describe('FormatComment', () => {
         '		* Lorem ipsum dolor sit amet'
       ]);
     });
+
+    it('works for JSDoc', () => {
+      expect(formatCommentLines([
+        '	* Description',
+        '	* @param {string} test Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.',
+        '	* @param {string} [test = 2]  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+        ' * Some more description.'
+      ])).toEqual([
+        '	* Description',
+        '	* @param {string} test Lorem ipsum dolor sit amet, consectetur adipisicing',
+        '	* elit, sed do.',
+        '	* @param {string} [test = 2]  Lorem ipsum dolor sit amet, consectetur',
+        '	* adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna',
+        '	* aliqua. * Some more description.'
+      ]);
+    });
+
+    it('doesn\'t advance for non-JSDOC @ signs', () => {
+      expect(formatCommentLines([
+        ' * This is an email: jan@amann.me. I\'m currently @ home. It\'s also possible to write it like @home if I want'
+      ])).toEqual([
+        ' * This is an email: jan@amann.me. I\'m currently @ home. It\'s also possible to',
+        ' * write it like @home if I want'
+      ]);
+    });
   });
 });

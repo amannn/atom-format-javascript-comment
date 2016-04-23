@@ -30,6 +30,7 @@ It's easy to format your comments correctly while writing them. But if you edit 
 ## Features
  - Single line comments (`// Whatever`)
  - Multiline comments (`* Whatever`)
+ - JSDoc tags always start on a new line (` * @param {string} name Some description.`)
 
 ## TODO
  - Better way to find the selection automatically if no selection is provided
