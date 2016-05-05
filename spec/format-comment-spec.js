@@ -3,7 +3,7 @@
 
 const formatCommentLines = require('../lib/formatCommentLines');
 
-describe('FormatComment', () => {
+describe('formatCommentLines', () => {
   describe('// comments', () => {
     it('turns one line into two lines', () => {
       expect(formatCommentLines([
