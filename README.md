@@ -55,3 +55,4 @@ It's easy to format your comments correctly while writing them. But if you edit 
  - Retain blank lines
  - Ignore JSDoc first and last line
  - Ignore non-comment lines
+ - Create a selection range across all modified lines at the end
