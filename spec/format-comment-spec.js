@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 'use babel';
 
 const formatCommentLines = require('../lib/formatCommentLines');
@@ -8,8 +9,8 @@ describe('FormatComment', () => {
       expect(formatCommentLines([
         '// Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
       ])).toEqual([
-        '// Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod',
-        '// tempor incididunt ut labore et dolore magna aliqua.'
+        '// Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed',
+        '// do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
       ]);
     });
 
@@ -17,10 +18,10 @@ describe('FormatComment', () => {
       expect(formatCommentLines([
         '// Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure'
       ])).toEqual([
-        '// Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod',
-        '// tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,',
-        '// quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo',
-        '// consequat. Duis aute irure'
+        '// Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed',
+        '// do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+        '// Ut enim ad minim veniam, quis nostrud exercitation ullamco',
+        '// laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure'
       ]);
     });
 
@@ -65,13 +66,13 @@ describe('FormatComment', () => {
     });
   });
 
-  describe('\* comments', () => {
+  describe('\\* comments', () => {
     it('turns one line into two lines', () => {
       expect(formatCommentLines([
         '* Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
       ])).toEqual([
-        '* Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod',
-        '* tempor incididunt ut labore et dolore magna aliqua.'
+        '* Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed',
+        '* do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
       ]);
     });
 
@@ -79,10 +80,10 @@ describe('FormatComment', () => {
       expect(formatCommentLines([
         '  * Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure'
       ])).toEqual([
-        '  * Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod',
-        '  * tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,',
-        '  * quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo',
-        '  * consequat. Duis aute irure'
+        '  * Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed',
+        '  * do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+        '  * Ut enim ad minim veniam, quis nostrud exercitation ullamco',
+        '  * laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure'
       ]);
     });
 
@@ -96,17 +97,16 @@ describe('FormatComment', () => {
 
     it('works for JSDoc', () => {
       expect(formatCommentLines([
-        '	* Description',
-        '	* @param {string} test Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.',
-        '	* @param {string} [test = 2]  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-        ' * Some more description.'
+        '  * Description',
+        '  * @param {string} test Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.',
+        '  * @param {string} [test = 2] Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
       ])).toEqual([
-        '	* Description',
-        '	* @param {string} test Lorem ipsum dolor sit amet, consectetur adipisicing',
-        '	* elit, sed do.',
-        '	* @param {string} [test = 2]  Lorem ipsum dolor sit amet, consectetur',
-        '	* adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna',
-        '	* aliqua. * Some more description.'
+        '  * Description',
+        '  * @param {string} test Lorem ipsum dolor sit',
+        '  * amet, consectetur adipisicing elit, sed do.',
+        '  * @param {string} [test = 2] Lorem ipsum dolor sit',
+        '  * amet, consectetur adipisicing elit, sed do eiusmod',
+        '  * tempor incididunt ut labore et dolore magna aliqua.'
       ]);
     });
 
@@ -114,8 +114,8 @@ describe('FormatComment', () => {
       expect(formatCommentLines([
         ' * This is an email: jan@amann.me. I\'m currently @ home. It\'s also possible to write it like @home if I want'
       ])).toEqual([
-        ' * This is an email: jan@amann.me. I\'m currently @ home. It\'s also possible to',
-        ' * write it like @home if I want'
+        ' * This is an email: jan@amann.me. I\'m currently @ home.',
+        ' * It\'s also possible to write it like @home if I want'
       ]);
     });
   });

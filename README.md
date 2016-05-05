@@ -1,21 +1,20 @@
 # Format JavaScript comment for Atom
 
-> Reformats your multiline comments into beautiful, maximum 80 character long lines, with no gaps or irregularities. ✨
+> Reformats your multiline comments into beautiful, maximum 80 character long lines with [minimum raggedness](https://en.wikipedia.org/wiki/Line_wrap_and_word_wrap#Minimum_raggedness). ✨
 
 ## What?
 Turns this:
 ```js
 // Lorem ipsum dolor sit amet, consectetur
 // adipisicing elit, sed do eiusmod tempor incididunt ut labore
-// et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in.
+// et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
 ```
 
 Into this:
 ```js
 // Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-// tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-// quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-// consequat. Duis aute irure dolor in.
+// tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+// veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
 ```
 
 ## Why?
@@ -34,5 +33,5 @@ It's easy to format your comments correctly while writing them. But if you edit 
 
 ## TODO
  - Better way to find the selection automatically if no selection is provided
- - Distribute words consistently across lines
  - Configurable line length
+ - Retain blank spaces

@@ -1,7 +1,7 @@
 {
   "name": "format-javascript-comment",
   "main": "./lib/format-comment",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "author": "Jan Amann <jan@amann.me>",
   "description": "Format your JavaScript comments",
   "keywords": [],
@@ -13,7 +13,12 @@
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
-  "dependencies": {},
+  "scripts": {
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "fair-lines": "^1.0.0"
+  },
   "devDependencies": {
     "babel-eslint": "^6.0.0",
     "eslint": "^2.5.3",
