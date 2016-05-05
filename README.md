@@ -5,16 +5,33 @@
 ## What?
 Turns this:
 ```js
-// Lorem ipsum dolor sit amet, consectetur
-// adipisicing elit, sed do eiusmod tempor incididunt ut labore
-// et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+/**
+ * If it keeps on rainin', levee's goin' to break. When the levee breaks I'll have no place to stay.
+ * @param {number} itKeepsOnRaining
+ * @param {string} [targetCity = 'Chicago'] It's got what it takes to make a mountain man leave his home.
+ * Oh, well, oh, well, oh, well.
+ * @return {string}
+ */
+function whatToDo(itKeepsOnRaining, targetCity = 'Chicago') {
+  if (itKeepsOnRaining) return 'Levee\'s goin\' to break; Going to ' + targetCity;
+  else return 'Sit on the levee and moan';
+}
 ```
 
 Into this:
 ```js
-// Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-// tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-// veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+/**
+* If it keeps on rainin', levee's goin' to break.
+* When the levee breaks I'll have no place to stay.
+* @param {number} itKeepsOnRaining
+* @param {string} [targetCity = 'Chicago'] It's got what it takes to
+* make a mountain man leave his home. Oh, well, oh, well, oh, well.
+* @return {string}
+ */
+function whatToDo(itKeepsOnRaining, targetCity = 'Chicago') {
+  if (itKeepsOnRaining) return 'Levee\'s goin\' to break; Going to ' + targetCity;
+  else return 'Sit on the levee and moan';
+}
 ```
 
 ## Why?
