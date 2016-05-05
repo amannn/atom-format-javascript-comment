@@ -21,12 +21,12 @@ function whatToDo(itKeepsOnRaining, targetCity = 'Chicago') {
 Into this:
 ```js
 /**
-* If it keeps on rainin', levee's goin' to break.
-* When the levee breaks I'll have no place to stay.
-* @param {number} itKeepsOnRaining
-* @param {string} [targetCity = 'Chicago'] It's got what it takes to
-* make a mountain man leave his home. Oh, well, oh, well, oh, well.
-* @return {string}
+ * If it keeps on rainin', levee's goin' to break.
+ * When the levee breaks I'll have no place to stay.
+ * @param {number} itKeepsOnRaining
+ * @param {string} [targetCity = 'Chicago'] It's got what it takes to
+ * make a mountain man leave his home. Oh, well, oh, well, oh, well.
+ * @return {string}
  */
 function whatToDo(itKeepsOnRaining, targetCity = 'Chicago') {
   if (itKeepsOnRaining) return 'Levee\'s goin\' to break; Going to ' + targetCity;
