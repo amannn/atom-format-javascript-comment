@@ -13,7 +13,7 @@ Turns this:
  * @return {string}
  */
 function whatToDo(itKeepsOnRaining, targetCity = 'Chicago') {
-  if (itKeepsOnRaining) return `Levee's goin' to break; Going to ${targetCity}.`;
+  if (itKeepsOnRaining) return `Levee's goin to break; Going to ${targetCity}`;
   else return 'Sit on the levee and moan';
 }
 ```
@@ -29,7 +29,7 @@ Into this:
  * @return {string}
  */
 function whatToDo(itKeepsOnRaining, targetCity = 'Chicago') {
-  if (itKeepsOnRaining) return `Levee's goin' to break; Going to ${targetCity}.`;
+  if (itKeepsOnRaining) return `Levee's goin to break; Going to ${targetCity}`;
   else return 'Sit on the levee and moan';
 }
 ```
@@ -51,4 +51,4 @@ It's easy to format your comments correctly while writing them. But if you edit 
 ## TODO
  - Better way to find the selection automatically if no selection is provided
  - Configurable line length
- - Retain blank spaces
+ - Retain blank lines
