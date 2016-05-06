@@ -16,7 +16,8 @@
     "no-nested-ternary": 0,
     "one-var": 0,
     "prefer-template": 0,
-    "max-len": 0
+    "max-len": 0,
+    "import/no-unresolved": 0
   },
   "globals": {
     "atom": 1,
