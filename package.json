@@ -1,6 +1,6 @@
 {
   "name": "format-javascript-comment",
-  "main": "./lib/format-comment",
+  "main": "./lib/index",
   "version": "0.1.4",
   "author": "Jan Amann <jan@amann.me>",
   "description": "Format your JavaScript comments",

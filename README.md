@@ -47,7 +47,7 @@ It's easy to format your comments correctly while writing them. But if you edit 
 ## How?
 1. Install format-javascript-comment (either through the package manager or through `apm install format-javascript-comment`).
 2. (Partially) select the lines the comment encompasses.
-3. Open command pallette (Cmd+Shift+P) and (partially) type "format comment".
+3. Open command palette (Cmd+Shift+P) and (partially) type "format comment".
 4. Press enter.
 
 ## TODO
@@ -56,3 +56,4 @@ It's easy to format your comments correctly while writing them. But if you edit 
  - Ignore JSDoc first and last line
  - Ignore non-comment lines
  - Create a selection range across all modified lines at the end
+ - Support multiple cursors

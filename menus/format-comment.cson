@@ -10,7 +10,7 @@
   {
     'label': 'Packages'
     'submenu': [
-      'label': 'format-comment'
+      'label': 'Format JavaScript comment'
       'submenu': [
         {
           'label': 'Format'
