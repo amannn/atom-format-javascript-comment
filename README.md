@@ -41,7 +41,7 @@ It's easy to format your comments correctly while writing them. But if you edit 
  - Single line comments (`// Whatever`)
  - Multiline comments (`* Whatever`)
  - JSDoc tags always start on a new line (` * @param {string} name Some description.`)
- - If no selection is made, the selection is automatically created by examining the surrounding lines.
+ - If no selection is made, the selection is automatically created by examining the lines surrounding the cursor.
  - If some selection is made, only the lines that are within the selection will be processed. However, lines can be selected partially.
 
 ## How?
