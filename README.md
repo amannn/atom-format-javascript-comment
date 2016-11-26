@@ -3,39 +3,8 @@
 > Reformats your multiline comments into beautiful, maximum 80 character long lines with [minimum raggedness](https://en.wikipedia.org/wiki/Line_wrap_and_word_wrap#Minimum_raggedness). ✨
 
 ## What?
-Turns this:
-```js
-/**
- * If it keeps on rainin', levee's goin' to break. When the levee breaks I'll have no place to stay.
- * @param {number} itKeepsOnRaining
- * @param {string} [targetCity = 'Chicago'] It's got what it takes to make a mountain man leave his home.
- * Oh, well, oh, well, oh, well.
- * @return {string}
- */
-function whatToDo(itKeepsOnRaining, targetCity = 'Chicago') {
-  if (itKeepsOnRaining) return `Levee's goin to break; Going to ${targetCity}`;
-  else return 'Sit on the levee and moan';
-}
-```
 
-Into this:
-```js
-/**
- * If it keeps on rainin', levee's goin' to break.
- * When the levee breaks I'll have no place to stay.
- * @param {number} itKeepsOnRaining
- * @param {string} [targetCity = 'Chicago'] It's got what it takes to
- * make a mountain man leave his home. Oh, well, oh, well, oh, well.
- * @return {string}
- */
-function whatToDo(itKeepsOnRaining, targetCity = 'Chicago') {
-  if (itKeepsOnRaining) return `Levee's goin to break; Going to ${targetCity}`;
-  else return 'Sit on the levee and moan';
-}
-```
-
-## Why?
-It's easy to format your comments correctly while writing them. But if you edit them later, it's annoying to reformat them.
+<img alt="Usage example" src="./usage.gif" />
 
 ## Features
  - Single line comments (`// Whatever`)
