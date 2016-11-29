@@ -1,10 +1,19 @@
 {
   "name": "format-javascript-comment",
   "main": "./lib/index",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "author": "Jan Amann <jan@amann.me>",
   "description": "Format your JavaScript comments",
-  "keywords": [],
+  "keywords": [
+    "formatting",
+    "comments",
+    "comment",
+    "beautify",
+    "prettify",
+    "minimum",
+    "raggedness",
+    "javascript"
+  ],
   "activationCommands": {
     "atom-workspace": "format-comment:format"
   },
