@@ -4,7 +4,7 @@
 
 ## What?
 
-<img alt="Usage example" src="./usage.gif" />
+<img alt="Usage example" src="https://raw.githubusercontent.com/amannn/atom-format-javascript-comment/master/usage.gif" />
 
 ## Features
  - Single line comments (`// Whatever`)
