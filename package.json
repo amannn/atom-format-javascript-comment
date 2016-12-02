@@ -14,9 +14,6 @@
     "raggedness",
     "javascript"
   ],
-  "activationCommands": {
-    "atom-workspace": "format-comment:format"
-  },
   "repository": "https://github.com/amannn/atom-format-javascript-comment",
   "license": "MIT",
   "engines": {
