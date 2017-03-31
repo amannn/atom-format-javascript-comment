@@ -95,19 +95,30 @@ describe('formatCommentLines', () => {
       ]);
     });
 
-    it('works for JSDoc', () => {
-      expect(formatCommentLines([
-        '  * Description',
-        '  * @param {string} test Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.',
-        '  * @param {string} [test = 2] Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-      ])).toEqual([
-        '  * Description',
-        '  * @param {string} test Lorem ipsum dolor sit',
-        '  * amet, consectetur adipisicing elit, sed do.',
-        '  * @param {string} [test = 2] Lorem ipsum dolor sit',
-        '  * amet, consectetur adipisicing elit, sed do eiusmod',
-        '  * tempor incididunt ut labore et dolore magna aliqua.'
-      ]);
+    describe('JSDOC', () => {
+      it('supports @param', () => {
+        expect(formatCommentLines([
+          '  * Description',
+          '  * @param {string} test Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.',
+          '  * @param {string} [test = 2] Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+        ])).toEqual([
+          '  * Description',
+          '  * @param {string} test Lorem ipsum dolor sit',
+          '  * amet, consectetur adipisicing elit, sed do.',
+          '  * @param {string} [test = 2] Lorem ipsum dolor sit',
+          '  * amet, consectetur adipisicing elit, sed do eiusmod',
+          '  * tempor incididunt ut labore et dolore magna aliqua.'
+        ]);
+      });
+      it('supports @property', () => {
+        expect(formatCommentLines([
+          '  * Description',
+          '  * @property {string} test Lorem ipsum'
+        ])).toEqual([
+          '  * Description',
+          '  * @property {string} test Lorem ipsum'
+        ]);
+      });
     });
 
     it('doesn\'t advance for non-JSDOC @ signs', () => {

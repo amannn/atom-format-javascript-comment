@@ -21,8 +21,7 @@
 
 ## TODO
  - Configurable line length
- - Retain blank lines
- - Ignore JSDoc first and last line
+ - Retain blank lines (already supported if the line is completely empty)
  - Ignore non-comment lines
  - Create a selection range across all modified lines at the end
  - Support multiple cursors
