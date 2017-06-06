@@ -12,6 +12,8 @@
  - JSDoc tags always start on a new line (` * @param {string} name Some description.`)
  - If no selection is made, the selection is automatically created by examining the lines surrounding the cursor.
  - If some selection is made, only the lines that are within the selection will be processed. However, lines can be selected partially.
+ - Completely empty comment lines will be preserved.
+ - Processing of multiple comments at once using multiple cursors.
 
 ## How?
 1. Install format-javascript-comment (either through the package manager or through `apm install format-javascript-comment`).
@@ -21,7 +23,4 @@
 
 ## TODO
  - Configurable line length
- - Retain blank lines (already supported if the line is completely empty)
  - Ignore non-comment lines
- - Create a selection range across all modified lines at the end
- - Support multiple cursors
