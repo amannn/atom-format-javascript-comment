@@ -19,42 +19,42 @@ function createEditor(lines, ranges) {
 
 describe('getRange', () => {
   it('expands a partial selection to a full line', () => {
-    let ranges = [new Range([1, 2], [1, 3])];
-    let lines = ['let test = 2;', '// a comment', 'test++;'];
-    let editor = createEditor(lines, ranges);
-    let result = getRange(editor);
+    const ranges = [new Range([1, 2], [1, 3])];
+    const lines = ['let test = 2;', '// a comment', 'test++;'];
+    const editor = createEditor(lines, ranges);
+    const result = getRange(editor);
     expect(result).toEqual([new Range([1, 0], [1, 12])]);
   });
 
   it('expands a partial selection across multiple lines to full lines', () => {
-    let ranges = [new Range([1, 2], [2, 3])];
-    let lines = [
+    const ranges = [new Range([1, 2], [2, 3])];
+    const lines = [
       'let test = 2;',
       '// a comment',
       '// another comment',
       'test++;'
     ];
-    let editor = createEditor(lines, ranges);
-    let result = getRange(editor);
+    const editor = createEditor(lines, ranges);
+    const result = getRange(editor);
     expect(result).toEqual([new Range([1, 0], [2, 18])]);
   });
 
   it('automatically finds multiline // comments', () => {
-    let ranges = [new Range([1, 2], [1, 2])];
-    let lines = [
+    const ranges = [new Range([1, 2], [1, 2])];
+    const lines = [
       'let test = 2;',
       '// a comment',
       '// another comment',
       'test++;'
     ];
-    let editor = createEditor(lines, ranges);
-    let result = getRange(editor);
+    const editor = createEditor(lines, ranges);
+    const result = getRange(editor);
     expect(result).toEqual([new Range([1, 0], [2, 18])]);
   });
 
   it('automatically finds multiline * comments', () => {
-    let ranges = [new Range([4, 2], [4, 2])];
-    let lines = [
+    const ranges = [new Range([4, 2], [4, 2])];
+    const lines = [
       'let test = 2;',
       '',
       '/**',
@@ -67,8 +67,8 @@ describe('getRange', () => {
       ' */',
       'test = 3;'
     ];
-    let editor = createEditor(lines, ranges);
-    let result = getRange(editor);
+    const editor = createEditor(lines, ranges);
+    const result = getRange(editor);
     expect(result).toEqual([new Range([3, 0], [8, 31])]);
   });
 });
