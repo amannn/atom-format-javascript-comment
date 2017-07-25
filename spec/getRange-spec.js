@@ -10,6 +10,9 @@ function createEditor(lines, ranges) {
     },
     lineTextForBufferRow(row) {
       return lines[row];
+    },
+    getLineCount() {
+      return lines.length;
     }
   };
 }

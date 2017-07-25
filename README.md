@@ -20,7 +20,3 @@
 2. (Partially) select the lines the comment encompasses.
 3. Open command palette (Cmd+Shift+P) and (partially) type "format comment".
 4. Press enter.
-
-## TODO
- - Configurable line length
- - Ignore non-comment lines
