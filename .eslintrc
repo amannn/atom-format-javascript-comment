@@ -1,24 +1,13 @@
 {
-  "extends": "eslint-config-airbnb",
-  "ecmaFeatures": {
-    "modules": true
+  "env": {
+    "node": true
   },
+  "extends": "eslint:recommended",
   "parser": "babel-eslint",
   "rules": {
-    "prefer-const": 0,
-    "comma-dangle": 0,
-    "radix": 0,
-    "no-irregular-whitespace": 0,
-    "no-else-return": 0,
-    "new-cap": 0,
-    "no-param-reassign": 0,
-    "default-case": 0,
-    "no-nested-ternary": 0,
-    "one-var": 0,
-    "prefer-template": 0,
-    "max-len": 0,
-    "import/no-unresolved": 0
+    "prettier/prettier": ["error", {"singleQuote": true, "bracketSpacing": false}]
   },
+  "plugins": ["prettier"],
   "globals": {
     "atom": 1,
     "describe": 1,

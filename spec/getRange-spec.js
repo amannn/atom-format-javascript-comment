@@ -20,11 +20,7 @@ function createEditor(lines, ranges) {
 describe('getRange', () => {
   it('expands a partial selection to a full line', () => {
     let ranges = [new Range([1, 2], [1, 3])];
-    let lines = [
-      'let test = 2;',
-      '// a comment',
-      'test++;',
-    ];
+    let lines = ['let test = 2;', '// a comment', 'test++;'];
     let editor = createEditor(lines, ranges);
     let result = getRange(editor);
     expect(result).toEqual([new Range([1, 0], [1, 12])]);
@@ -36,7 +32,7 @@ describe('getRange', () => {
       'let test = 2;',
       '// a comment',
       '// another comment',
-      'test++;',
+      'test++;'
     ];
     let editor = createEditor(lines, ranges);
     let result = getRange(editor);
@@ -49,7 +45,7 @@ describe('getRange', () => {
       'let test = 2;',
       '// a comment',
       '// another comment',
-      'test++;',
+      'test++;'
     ];
     let editor = createEditor(lines, ranges);
     let result = getRange(editor);

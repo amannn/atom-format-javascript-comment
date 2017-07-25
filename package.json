@@ -23,12 +23,12 @@
     "lint": "eslint ."
   },
   "dependencies": {
-    "fair-lines": "^1.0.0"
+    "fair-lines": "1.0.0"
   },
   "devDependencies": {
-    "babel-eslint": "^6.0.0",
-    "eslint": "^2.5.3",
-    "eslint-config-airbnb": "^6.2.0",
-    "eslint-plugin-react": "^4.2.3"
+    "babel-eslint": "7.2.3",
+    "eslint": "4.3.0",
+    "eslint-plugin-prettier": "2.1.2",
+    "prettier": "1.5.3"
   }
 }
